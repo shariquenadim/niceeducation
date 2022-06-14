@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+   <meta charset="UTF-8">
+   <title>Course - <%= course["full-form"] %></title>
+   <link rel="stylesheet" href="/singlecourse/css/style.css">
+   <link rel="stylesheet" href="/singlecourse/css/responsive.css">
+
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="shortcut icon" href="/assets/img/fv.png" type="image/x-icon">
+   <link rel="icon" href="/assets/img/fv.png" type="image/x-icon">
+   <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="/assets/css/animate.css">
+   <link rel="stylesheet" href="/assets/css/flaticon-3.css">
+   <link rel="stylesheet" href="/assets/css/fontawesome-all.css">
+   <link rel="stylesheet" href="/assets/css/owl.carousel.css">
+   <link rel="stylesheet" href="/assets/css/side-demo.css">
+   <link rel="stylesheet" href="/assets/css/style.css">
+   <link rel="stylesheet" href="/assets/css/education.css">
+
+   </head>
+
+    <body class="saas-classic">
+    <!-- preloader - start -->
+    <!-- <div id="preloader" class="saas-classic-preloader"></div> -->
+    <div class="up">
+        <a href="#" id="scrollup" class="saas-classic-scrollup text-center"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <!-- Start of header section
+        ============================================= -->
+        <header id="app-edu-main-header" class="app-edu-header-main">
+         <div class="container">
+             <div class="app-edu-logo float-left">
+                 <a href="/"><img src="/img/lo.png" alt=""></a>
+             </div>
+             <div class="app-edu-main-header-menu clearfix">
+                 <div class="header-dia-cta-btn text-center float-right">
+                     <a href="#">Contact Us</a>
+                 </div>
+                 <nav class="app-edu-main-navigation float-right clearfix ul-li">
+                     <ul id="app-edu-main-nav" class="nav navbar-nav clearfix">
+                         <li class="side-demo position-relative"><a href="/">Home</a></li>
+                         <li><a href="#">About</a></li>
+                         <li><a href="#">Team</a></li>
+                         <li><a href="/courses" >Courses</a></li>
+                         <li><a href="#">Contact</a></li>
+                         <li><a href="#">Blog</a></li>
+                     </ul>
+                 </nav>
+             </div>
+             <div class="app-edu-mobile_menu position-relative">
+                 <div class="app-edu-mobile_menu_button app-edu-open_mobile_menu">
+                     <i class="fas fa-bars"></i>
+                 </div>
+                 <div class="app-edu-mobile_menu_wrap">
+                     <div class="mobile_menu_overlay app-edu-open_mobile_menu"></div>
+                     <div class="app-edu-mobile_menu_content">
+                         <div class="app-edu-mobile_menu_close app-edu-open_mobile_menu">
+                             <i class="fas fa-times"></i>
+                         </div>
+                         <div class="m-brand-logo text-center">
+                             <a href="/"><img src="/img/lo.png" alt=""></a>
+                         </div>
+                         <nav class="app-edu-mobile-main-navigation  clearfix ul-li">
+                          <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
+                             <li ><a href="/">Home</a></li>
+                             <li><a href="#">About</a></li>
+                             <li><a href="#">Team</a></li>
+                             <li><a href="/courses">Courses</a></li>
+                             <li><a href="#">Contact</a></li>
+                             <li><a href="#">Blog</a></li>
+                         </ul>
+                     </nav>
+                 </div>
+             </div>
+             <!-- /Mobile-Menu -->
+         </div>
+     </header>
+    <!-- End of header section
+        ============================================= -->
+
+    <!-- Start of breadcurmb section
+        ============================================= -->
+        <section id="saasio-breadcurmb" class="saasio-breadcurmb-section">
+            <div class="container">
+                <div class="breadcurmb-title text-center">
+                    <h2><%= course["full-form"] %></h2>
+                </div>
+                <div class="breadcurmb-item-list text-center ul-li">
+                   <ul class="saasio-page-breadcurmb">
+                       <li><a href="/">Home</a></li>
+                       <li><a href="/courses">Courses</a></li>
+                       <li><a href="/courses/<%= course.name %>"><%= course["full-form"] %></a></li>
+                   </ul>
+               </div>
+           </div>
+       </section>
+    <!-- End of breadcurmb section
+        ============================================= -->      
+        <section class="our-team pb40">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12 col-lg-8 col-xl-9">
+                  <div class="row">
+                     <div class="col-lg-12">
+                        <div class="courses_single_container">
+                           <div class="cs_row_one">
+                              <div class="cs_ins_container">
+                                 <div class="cs_instructor">
+                                    <ul class="cs_instrct_list float-left mb0">
+                                       <li class="list-inline-item"><img class="thumb" src="/singlecourse/images/team/4.png" alt="4.png"></li>
+                                       <li class="list-inline-item"><a href="#">Ali TUFAN</a></li>
+                                       <li class="list-inline-item"><a href="#">Last updated 11/2019</a></li>
+                                    </ul>
+                                    <ul class="cs_watch_list float-right mb0">
+                                       <li class="list-inline-item"><a href="#"><span class="flaticon-like"></span></a></li>
+                                       <!-- <li class="list-inline-item"><a href="#">Add to Wishlist</a></li> -->
+                                       <li class="list-inline-item"><a href="#"><span class="flaticon-share"> Share</span></a></li>
+                                    </ul>
+                                 </div>
+                                 <h3 class="cs_title"><%= course["full-form"] %></h3>
+                                 <ul class="cs_review_seller">
+                                    <li class="list-inline-item"><a href="#"><span>Best Seller</span></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
+                                    <li class="list-inline-item"><a href="#">4.5 (11,382 Ratings)</a></li>
+                                 </ul>
+                                 <ul class="cs_review_enroll">
+                                    <li class="list-inline-item"><a href="#"><span class="flaticon-profile"></span> 57,869 students enrolled</a></li>
+                                    <li class="list-inline-item"><a href="#"><span class="flaticon-comment"></span> 25 Review</a></li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="cs_row_two">
+                              <div class="cs_overview">
+                                 <h4 class="title">Overview</h4>
+                                 <h4 class="subtitle">Course Description</h4>
+                                 <p class="mb30">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+                                 <p class="mb20">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                 <h4 class="subtitle">What you'll learn</h4>
+                                 <ul class="cs_course_syslebus">
+                                    <li><i class="fa fa-check"></i><p>Become a UX designer.</p></li>
+                                    <li><i class="fa fa-check"></i><p>You will be able to add UX designer to your CV</p></li>
+                                    <li><i class="fa fa-check"></i><p>Become a UI designer.</p></li>
+                                    <li><i class="fa fa-check"></i><p>Build & test a full website design.</p></li>
+                                    <li><i class="fa fa-check"></i><p>Build & test a full mobile app.</p></li>
+                                 </ul>
+                                 <ul class="cs_course_syslebus2">
+                                    <li><i class="fa fa-check"></i><p>Learn to design websites & mobile phone apps.</p></li>
+                                    <li><i class="fa fa-check"></i><p>You'll learn how to choose colors.</p></li>
+                                    <li><i class="fa fa-check"></i><p>Prototype your designs with interactions.</p></li>
+                                    <li><i class="fa fa-check"></i><p>Export production ready assets.</p></li>
+                                    <li><i class="fa fa-check"></i><p>All the techniques used by UX professionals</p></li>
+                                 </ul>
+                                 <h4 class="subtitle">Requirements</h4>
+                                 <ul class="list_requiremetn">
+                                    <li><i class="fa fa-circle"></i><p>You will need a copy of Adobe XD 2019 or above. A free trial can be downloaded from Adobe.</p></li>
+                                    <li><i class="fa fa-circle"></i><p>No previous design experience is needed.</p></li>
+                                    <li><i class="fa fa-circle"></i><p>No previous Adobe XD skills are needed.</p></li>
+                                 </ul>
+                              </div>
+                           </div>
+                     
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-4 col-xl-3">
+                  <div class="instructor_pricing_widget">
+                     <div class="price"><span>Price</span> $49.00 <small>$69.00</small></div>
+                     <a href="#" class="cart_btnss">Add To Cart</a>
+                     <a href="#" class="cart_btnss_white">Buy Now</a>
+                     <h5 class="subtitle text-left">Includes</h5>
+                     <ul class="price_quere_list text-left">
+                        <li><a href="#"> 11 hours on-demand video</a></li>
+                        <li><a href="#"> 69 downloadable resources</a></li>
+                        <li><a href="#"> Full lifetime access</a></li>
+                        <li><a href="#"> Access on mobile and TV</a></li>
+                        <li><a href="#"> Assignments</a></li>
+                        <li><a href="#"> Certificate of Completion</a></li>
+                     </ul>
+                  </div>
+                  <div class="feature_course_widget">
+                     <ul class="list-group">
+                        <h4 class="title">Course Features</h4>
+                        <li class="d-flex justify-content-between align-items-center">
+                            Lectures <span class="float-right">6</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            Quizzes <span class="float-right">1</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            Duration <span class="float-right">3 hours</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            Skill level <span class="float-right">All level</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            Language <span class="float-right">English</span>
+                        </li>
+                        <li class="d-flex justify-content-between align-items-center">
+                            Assessments <span class="float-right">Yes</span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+    <!-- Start of footer section
+        ============================================= -->
+        <footer id="saas_two_footer" class="saas_two_footer_section relative-position">
+            <div class="s2-newslatter_section relative-position">
+                <div class="container">
+                    <div class="s2-newslatter_content relative-position">
+                        <div class="s2-newslatter_title  text-center saas2-headline pera-content">
+                            <h2>Subscribe now!</h2>
+                            <p>Get the latest update.</p>
+                        </div>
+                        <div class="s2-newslatter-form  relative-position">
+                            <form action="#" class="position-relative">
+                                <input class="email" name="email" type="email" placeholder="Enter your email address">
+                                <div class="nws-button position-absolute text-capitalize">
+                                    <button class="hover-btn" type="submit" value="Submit"> Subscribe</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="newsletter_pattern_1"><img src="assets/img/saas-c/banner/nb.png" alt=""></div>
+                    <div class="cloud_anim newsletter_pattern_2" style="background-image: url(../../old3.commonsupport.com/emu/wp-content/uploads/2021/02/cloud-2.html);"></div>
+                    <div class="cloud_anim newsletter_pattern_3" style="background-image: url(../../old3.commonsupport.com/emu/wp-content/uploads/2021/02/cloud-5.html);"></div> 
+                    <div class="newsletter_pattern_4 " style="background-image: url(assets/img/saas-c/banner/ns.png);"></div>
+                    <div class="newsletter_pattern_5 " style="background-image: url(assets/img/saas-c/banner/ns2.png);"></div>
+                </div>
+            </div> 
+            <div class="footer_content pera-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="s2_footer_widget clearfix ul-li-block  saas2-headline">
+                                <div class="s2_footer_about">
+                                    <div class="s2-footer_logo">
+                                        <img src="assets/img/saas-c/logo/f-logo.png" alt="">
+                                    </div>
+                                    <div class="footer_about">
+                                        30 Commercial Road Fratton 
+                                        PORTSMOUTH Hampshire PO1 1AA 
+                                        UNITED KINGDOM
+                                    </div>
+                                    <span>Open Hours: </span>
+                                    <p>Mon - Sat: 8 am - 5 pm,
+                                    Sunday: CLOSED</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="s2_footer_widget clearfix ul-li-block saas2-headline">
+                                <div class="s2_footer_menu">
+                                    <h3 class="s2_widget_title">
+                                        <span>Links</span>
+                                        <i></i>
+                                    </h3>
+                                    <ul>
+                                        <li><a href="#"> Home</a></li>
+                                        <li><a href="#"> Team</a></li>
+                                        <li><a href="#"> FAQ</a></li>
+                                        <li><a href="#"> Services</a></li>
+                                        <li><a href="#"> Gallery</a></li>
+                                        <li><a href="#"> About us</a></li>
+                                        <li><a href="#"> Contact</a></li>
+                                        <li><a href="#"> Testimonials</a></li>
+                                        <li><a href="#"> News</a></li>
+                                        <li><a href="#"> Portfolio</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="s2_footer_widget clearfix ul-li-block saas2-headline">
+                                <div class="s2_footer_social">
+                                    <h3 class="s2_widget_title">
+                                        <span>Newsletter</span> 
+                                        <i></i>
+                                    </h3>
+                                    <p>Send us a newsletter to get update</p>
+                                    <form action="#">
+                                        <input  name="email" type="email" placeholder="Enter your email address">
+                                        <button  type="submit" value="Submit"> <i class="fas fa-paper-plane"></i></button>
+                                    </form>
+                                    <a href="#"><i class="fb-bg fab fa-facebook-f "></i></a>
+                                    <a href="#"><i class="bh-bg fab fa-behance"></i></a>
+                                    <a href="#"><i class="tw-bg fab fa-twitter"></i></a>
+                                    <a href="#"><i class="dr-bg fab fa-dribbble"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <div class="s2-copyright text-center">2021 © All rights reserved by <a href="#">Themexriver</a></div>
+    <!-- End of footer section 
+        ============================================= -->
+
+   <script src="/assets/js/jquery.js"></script>
+   <script src="/assets/js/popper.min.js"></script>
+   <script src="/assets/js/bootstrap.min.js"></script>
+   <script src="/assets/js/wow.min.js"></script>
+   <script src="/assets/js/tilt.jquery.min.js"></script>
+   <script src="/assets/js/owl.js"></script>
+   <script src="/assets/js/aos.js"></script>
+   <script src="/assets/js/slick.js"></script>
+   <script src="/assets/js/jquery.barfiller.js"></script>
+   <script src="/assets/js/parallax-scroll.js"></script>
+   <script src="/assets/js/jquery.paroller.min.js"></script>
+   <script src="/assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="/assets/js/side-demo.js"></script>
+   <script src="/assets/js/script.js"></script>
+   <script src="/assets/js/education.js"></script>
+
+
+   <!-- <script type="text/javascript" src="/singlecourse/js/jquery-3.3.1.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/jquery-migrate-3.0.0.min.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/popper.min.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/jquery.mmenu.all.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/ace-responsive-menu.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/bootstrap-select.min.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/snackbar.min.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/simplebar.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/parallax.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/scrollto.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/jquery-scrolltofixed-min.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/jquery.counterup.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/wow.min.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/progressbar.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/slider.js"></script>
+   <script type="text/javascript" src="/singlecourse/js/timepicker.js"></script> -->
+   <!-- Custom script for all pages --> 
+   <!-- <script type="text/javascript" src="js/script.js"></script> -->
+
+</body> 
+</html>          

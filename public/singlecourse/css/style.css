@@ -1,0 +1,687 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,500,600,700|Open+Sans);
+
+.our-team {
+   padding-top: 60px;
+   padding-bottom: 40px;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+iframe {
+  border: none;
+  width: 100%; }
+
+a {
+  color: #555555;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased; }
+  a:hover, a:focus {
+    color: #333333;
+    text-decoration: none;
+    outline: none; }
+  a img {
+    border: none; }
+
+
+.courses_all_btn .btn{
+   border: 2px solid;
+   border-radius: 25px;
+   font-size: 15px;
+   height: 50px;
+   line-height: 47px;
+   margin-top: 30px;
+   padding: 0 60px;
+ }
+ .courses_all_btn.home3 .btn{
+   border-color: #369fdb;
+   color: #369fdb;
+ }
+ .courses_all_btn.home3 .btn:hover,
+ .courses_all_btn.home3 .btn:active,
+ .courses_all_btn.home3 .btn:focus{
+   background-color: #369fdb;
+   color: #ffffff;
+ }
+ .course-single2{
+   background-color: #f9fafc;
+ }
+ .courses_single_container{
+   position: relative;
+   width: 100%;
+ }
+ .cs_row_one .cs_instructor{
+   clear: both;
+   display: inline-block;
+   position: relative;
+   width: 100%;
+ }
+ .cs_row_one .cs_instructor .cs_instrct_list li{
+   margin-right: 15px;
+ }
+ .cs_row_one .cs_instructor .cs_instrct_list li .thumb{
+   height: 50px;
+   width: 50px;
+ }
+ .cs_row_one .cs_instructor .cs_instrct_list li a{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(126, 126, 126);
+   line-height: 1.2;
+ }
+ .cs_row_one .cs_instructor .cs_instrct_list li a{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(126, 126, 126);
+   line-height: 1.2;
+ }
+ .cs_row_one .cs_instructor .cs_watch_list li a,
+ .cs_row_one.csv3 .cs_watch_list li a{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: #0a0a0a;
+   line-height: 1.2;
+ }
+ .cs_row_one .cs_instructor .cs_watch_list li:first-child a{
+   font-size: 20px;
+ }
+ .cs_row_one .cs_instructor .cs_watch_list li:last-child a,
+ .cs_row_one.csv3 .cs_watch_list li:last-child a{
+   border-radius: 5px;
+   background-color: rgb(36, 65, 231);
+   color: #ffffff;
+   display: block;
+   height: 30px;
+   text-align: center;
+   width: 90px;
+ }
+ .cs_row_one .cs_instructor .cs_watch_list li:last-child a span,
+ .cs_row_one.csv3 .cs_watch_list li:last-child a span{
+   font-size: 13px;
+   font-family: "Open Sans";
+   color: rgb(255, 255, 255);
+   line-height: 2.2;
+ }
+ .cs_row_one .cs_title{
+   font-size: 26px;
+   color: #0a0a0a;
+   line-height: 1.2;
+ }
+ .cs_row_one .cs_review_seller{
+   margin-bottom: 15px;
+ }
+ .cs_row_one .cs_review_seller li{
+   margin-right: 4px;
+ }
+ .cs_row_one .cs_review_seller li a{
+   font-size: 13px;
+   font-family: "FontAwesome";
+   color: rgb(208, 210, 60);
+   line-height: 1.2;
+ }
+ .cs_row_one .cs_review_seller li:first-child{
+   margin-right: 15px;
+ }
+ .cs_row_one .cs_review_seller li:first-child a{
+   border-radius: 5px;
+   background-color: rgb(255, 16, 83);
+   color: #ffffff;
+   display: block;
+   height: 30px;
+   text-align: center;
+   width: 90px;  
+ }
+ .cs_row_one .cs_review_seller li:first-child a span{
+   font-size: 13px;
+   font-family: "Open Sans";
+   color: rgb(255, 255, 255);
+   line-height: 2.2;
+ }
+ .cs_row_one .cs_review_seller li:last-child a{
+   font-size: 14px;
+   font-family: "Open Sans";
+   color: rgb(126, 126, 126);
+   line-height: 1.2;
+ }
+ .cs_row_one .cs_review_enroll{
+   margin-bottom: 30px;
+ }
+ .cs_row_one .cs_review_enroll li{
+   margin-right: 15px;
+ }
+ .cs_row_one .cs_review_enroll li a{
+   font-size: 14px;
+   font-family: "Open Sans";
+   color: rgb(126, 126, 126);
+   line-height: 1.2;
+ }
+ .cs_row_one .cs_review_enroll li a span{
+   padding-right: 6px;
+ }
+ .cs_row_one .courses_big_thumb{
+   margin-bottom: 30px;
+ }
+ .cs_row_one .courses_big_thumb .thumb{
+   display: -webkit-flex;
+   display: -moz-flex;
+   display: -ms-flex;
+   display: -o-flex;
+   display: flex;
+   overflow: hidden;
+   position: relative;
+ }
+ .cs_ins_container .courses_big_thumb .iframe_video{
+   border-radius: 5px;
+   min-height: 540px;
+   max-width: 960px;
+ }
+ .cs_row_one .courses_big_thumb .thumb img{
+   border-radius: 5px;
+ }
+ .cs_row_one .courses_big_thumb .thumb .overlay_icon:before{
+   bottom: 0;
+   background-color: rgba(0,0,0, .3);
+   content:"";
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 0;
+   width: 100%;
+ }
+ .cs_row_one .courses_big_thumb .thumb .overlay_icon a,
+ .cs_row_one .courses_big_thumb .thumb .overlay_icon .title{
+   color: #ffffff;
+   left: 0;
+   margin: 0 auto;
+   position: absolute;
+   right: 0;
+   text-align: center;
+   top: 40%;
+ }
+ .cs_row_one .courses_big_thumb .thumb .overlay_icon .title{
+   top: 58%;
+ }
+ .cs_row_one.csv3 .cs_review_enroll{
+   display: inline;
+ }
+ .cs_row_two .cs_overview{
+   border-style: solid;
+   border-width: 2px;
+   border-color: rgb(237, 239, 247);
+   border-radius: 5px;
+   background-color: rgba(42, 53, 59, 0);
+   margin-bottom: 30px;
+   padding: 30px;
+ }
+ .cs_row_two.csv2 .cs_overview,
+ .cs_row_three.csv2 .course_content,
+ .cs_row_four.csv2 .about_ins_container,
+ .cs_row_five.csv2 .student_feedback_container,
+ .cs_row_six.csv2 .sfeedbacks,
+ .cs_row_seven.csv2 .sfeedbacks{
+   border-radius: 5px;
+   background-color: #ffffff;
+   box-shadow: 0 1px 4px 0 rgba(0,0,0,.12);
+   border-width: 0px;
+   margin-top: 30px;
+ }
+ .cs_row_two .cs_overview .title{
+   font-size: 20px;
+   font-weight: 600;
+   color: #0a0a0a;
+   line-height: 1.2;
+   margin-bottom: 22px;
+ }
+ .cs_row_two .cs_overview h4{
+   font-family: "Nunito";
+   font-size: 18px;
+   color: rgb(59, 59, 59);
+   line-height: 1.333;
+   margin-bottom: 10px;
+ }
+ .cs_row_two .cs_overview p{
+   font-family: "Open Sans";
+   font-size: 15px;
+   color: rgb(126, 126, 126);
+   line-height: 1.6;
+ }
+ .cs_row_two .cs_overview ul.cs_course_syslebus{
+   margin-bottom: 17px;
+   margin-right: 100px;
+ }
+ .cs_row_two .cs_overview ul.cs_course_syslebus,
+ .cs_row_two .cs_overview ul.cs_course_syslebus2{
+   display: inline-block;
+ }
+ .cs_row_two .cs_overview ul.cs_course_syslebus li p,
+ .cs_row_two .cs_overview ul.cs_course_syslebus2 li p{
+   font-family: "Open Sans";
+   font-size: 15px;
+   color: rgb(126, 126, 126);
+   display: inline;
+   line-height: 2.8;
+   margin-bottom: 0;
+   padding-left: 10px;
+ }
+ .cs_row_two .cs_overview ul.list_requiremetn li i{
+   font-size: 10px;
+   color: rgb(126, 126, 126);
+ }
+ .cs_row_two .cs_overview ul.list_requiremetn li p{
+   color: rgb(126, 126, 126);
+   font-family: "Open Sans";
+   font-size: 15px;
+   display: inline;
+   line-height: 2.667;
+   margin-bottom: 0;
+   padding-left: 13px;
+ }
+ .cs_row_three .course_content{
+   border-style: solid;
+   border-width: 2px;
+   border-color: rgb(237, 239, 247);
+   border-radius: 5px;
+   background-color: rgba(42, 53, 59, 0);
+   margin-bottom: 30px;
+   position: relative;
+   padding: 30px;
+ }
+ .cs_row_three .course_content .cc_headers{
+   position: relative;
+ }
+ .cs_row_three .course_content h4.title{
+   font-size: 20px;
+   color: #0a0a0a;
+   float: left;
+   line-height: 1.2;
+   font-weight: 600;
+ }
+ .cs_row_three .course_content .details{
+   display: inline-block;
+   position: relative;
+   width: 100%;
+ }
+ .cs_row_three .course_content .details .cc_tab{
+   margin-top: 10px;
+ }
+ .cs_row_three .course_content .details .cc_tab h4.panel-title{
+   font-size: 18px;
+   font-family: "Nunito";
+   color: rgb(59, 59, 59);
+   line-height: 1.7;
+   border-radius: 5px;
+   background-color: rgb(237, 239, 247);
+   height: 50px;
+   padding: 10px 20px;
+ }
+ .cs_row_three .course_content .details .cc_tab .panel-body .cs_list li{
+   border-bottom: 1px solid #eeeeee;
+   padding: 20px 25px;  
+ }
+ .cs_row_three .course_content .details .cc_tab .panel-body .cs_list li:last-child{
+   border-bottom: none;
+ }
+ .cs_row_three .course_content .details .cc_tab .panel-body .cs_list li a{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(79, 79, 79);
+   line-height: 1.6;
+ }
+ .cs_row_three .course_content .details .cc_tab .panel-body .cs_list li a span{
+   padding-right: 4px;
+ }
+ .cs_row_three .course_content .details .cc_tab .panel-body .cs_list li a span.cs_preiew{
+   float: right;
+   margin-right: 50px;
+ }
+ .cs_row_three .course_content .details .cc_tab .panel-body .cs_list li:hover a{
+   color: #2441e7;
+ }
+ .cs_row_three .course_content .details .cc_tab .panel-body .cs_list li a span.cs_time{
+   float: right;
+ }
+ .cs_row_four .about_ins_container,
+ .cs_row_five .student_feedback_container,
+ .cs_row_six .sfeedbacks,
+ .cs_row_seven .sfeedbacks{
+   border-style: solid;
+   border-width: 2px;
+   border-color: rgb(237, 239, 247);
+   border-radius: 5px;
+   background-color: rgba(42, 53, 59, 0);
+   margin-bottom: 30px;
+   padding: 30px;
+   position: relative;
+ }
+ .cs_row_six .sfeedbacks .sspd_review_liked{
+   background-color: rgb(237, 239, 247);
+   border-radius: 20px;
+   height: 40px;
+   text-align: center;
+   max-width: 200px;
+ }
+ .cs_row_six .sfeedbacks .sspd_review_liked a{
+   font-size: 14px;
+   font-family: "Open Sans";
+   line-height: 2.714;
+ }
+ .cs_row_six.csv2.style2{
+   overflow: hidden;
+ }
+ .cs_row_four .about_ins_container .aii_title,
+ .cs_row_five .student_feedback_container .aii_title{
+   font-size: 20px;
+   font-weight: 600;
+   color: #0a0a0a;
+   margin-bottom: 25px;
+   line-height: 1.2;
+ }
+ .cs_row_four .about_ins_container .about_ins_info{
+   float: left;
+ }
+ .cs_row_four .about_ins_container .details{
+   padding-left: 160px;
+ }
+ .cs_row_four .about_ins_container .details h4{
+   font-size: 20px;
+   font-family: "Nunito";
+   color: #0a0a0a;
+   margin-bottom: 0;
+   line-height: 1.5;
+ }
+ .cs_row_four .about_ins_container .details .subtitle{
+   font-size: 14px;
+   font-family: "Open Sans";
+   color: rgb(137, 137, 137);
+   margin-bottom: 15px;
+   line-height: 1.714;
+ }
+ .cs_row_four .about_ins_container .details p{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(79, 79, 79);
+   line-height: 1.6;
+ }
+ .cs_row_four .about_ins_container .details .about_ins_list li:first-child p{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(79, 79, 79);
+   margin-bottom: 0;
+   line-height: 1.6;
+ }
+ .cs_row_four .about_ins_container .details .about_ins_list li a{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(79, 79, 79);
+   line-height: 1.6;
+ }
+ .cs_row_four .about_ins_container .details .review_list{
+   float: left;
+   margin-right: 80px;
+ }
+ .cs_row_four.csv2 .about_ins_container .details .review_list{
+   margin-right: 50px;
+ }
+ .cs_row_four.csv2 .about_ins_container .details .about_info_list li{
+   margin-right: 15px;
+ }
+ .cs_row_four .about_ins_container .details .review_list li{
+   margin-right: 4px;
+ }
+ .cs_row_four .about_ins_container .details .review_list li i{
+   font-size: 13px;
+   color: rgb(208, 210, 60);
+   line-height: 1.2;
+ }
+ .cs_row_four .about_ins_container .details .about_info_list li{
+   font-size: 14px;
+   font-family: "Open Sans";
+   color: rgb(126, 126, 126);
+   line-height: 1.2;
+   margin-right: 30px;
+ }
+ .cs_row_four .about_ins_container .details .about_info_list li:last-child{
+   margin-right: 0;
+ }
+ .cs_row_four .about_ins_container .details .about_info_list li span{
+   padding-right: 10px;
+ }
+ .cs_row_five .student_feedback_container .s_feeback_content .sonny_progressbar{
+   border-radius: 5px;
+   max-width: 470px;
+   padding-left: 100px;
+ }
+ .cs_row_five .student_feedback_container .s_feeback_content ul.skills{
+   margin-bottom: 30px;
+ }
+ .cs_row_five .student_feedback_container .s_feeback_content ul.skills li{
+   color: rgb(79, 79, 79);
+   font-size: 14px;
+   font-family: "Open Sans";
+   float: left;
+   line-height: 1.2;
+ }
+ .cs_row_five .student_feedback_container .s_feeback_content .sonny_progressbar .bar{
+   background-color: #d0d23c !important;
+ }
+ .cs_row_five .student_feedback_container .s_feeback_content .sonny_progressbar .bar-container{
+   border-radius: 5px;
+   height: 10px !important;
+   overflow: hidden;
+ }
+ .cs_row_five .student_feedback_container .s_feeback_content .sonny_progressbar p.title{
+   float: right;
+   margin-right: -50px;
+   margin-top: -10px;
+ }
+ .my_course_content_list .mc_content_list .s_feeback_content .sonny_progressbar{
+   border-radius: 5px;
+   max-width: 170px;
+   padding-left: 100px;
+ }
+ .my_course_content_list .mc_content_list .sonny_progressbar .bar-container{
+   margin-left: -190px;
+   margin-right: 130px;
+   margin-top: 10px;
+ }
+ .my_course_content_list .mc_content_list .sonny_progressbar p.title{
+   float: right;
+   margin-bottom: 0;
+   margin-right: 0;
+   margin-top: -10px;
+ }
+ .cs_row_five .student_feedback_container .aii_average_review{
+   border-radius: 5px;
+   background-color: rgb(237, 239, 247);
+   height: 180px;
+   position: absolute;
+   right: 30px;
+   top: 45px;
+   width: 230px;
+ }
+ .cs_row_five .student_feedback_container .aii_average_review .av_content{
+   margin-top: 45px;
+ }
+ .cs_row_five .student_feedback_container .aii_average_review .av_content h2{
+   font-size: 50px;
+   font-family: "Nunito";
+   color: #0a0a0a;
+   line-height: 0.6;
+ }
+ .cs_row_five .student_feedback_container .aii_average_review .av_content .aii_rive_list li{
+   font-size: 13px;
+   font-family: "FontAwesome5FreeSolid";
+   color: rgb(208, 210, 60);
+   margin-right: 3px;
+   line-height: 1.2;
+ }
+ .cs_row_five .student_feedback_container .aii_average_review .av_content p{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(79, 79, 79);
+   line-height: 1.2;
+ }
+ .r_course_title{
+   font-size: 26px;
+   color: #0a0a0a;
+   line-height: 1.2;
+   margin-bottom: 30px;
+ }
+ .mbp_first.media.csv1.style2{
+   position: relative;
+ }
+ .mbp_first.media.csv1.style2:before{
+   bottom: -30px;
+   background-color: #dedede;
+   content: "";
+   position: absolute;
+   height: 1px;
+   left: -30px;
+   right: -30px;
+   width: 105%;
+ }
+
+ 
+.feature_course_widget{
+   border-style: solid;
+   border-width: 2px;
+   border-color: rgb(238, 238, 238);
+   border-radius: 5px;
+   background-color: rgba(243, 243, 246, 0);
+   padding: 30px 0 15px;
+   margin-bottom: 30px;
+ }
+ .feature_course_widget h4{
+   font-size: 20px;
+   font-weight: 600;
+   color: #0a0a0a;
+   line-height: 1.2;
+   padding-left: 30px;
+ }
+ .feature_course_widget ul li{
+   border-bottom: 1px solid #eeeeee;
+   color: #0a0a0a;
+   font-family: "Open Sans";
+   font-size: 15px;
+   line-height: 2.667;
+   padding: 0 30px;
+ }
+ .feature_course_widget ul li span{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(126, 126, 126);
+   line-height: 2.667;
+ }
+ .feature_course_widget ul li:last-child{
+   border-bottom: none;
+   padding: 0 30px;
+ }
+ .instructor_pricing_widget{
+   border-style: solid;
+   border-width: 2px;
+   border-color: rgb(237, 239, 247);
+   border-radius: 5px;
+   background-color: #ffffff;
+   margin-bottom: 30px;
+   padding: 30px;
+   text-align: center;
+   
+ }
+ .instructor_pricing_widget.csv2{
+   margin-top: -300px;
+   box-shadow: 0 1px 4px 0 rgba(0,0,0,.12);
+   border-width: 0px;
+ }
+ 
+ .feature_course_widget.csv1,
+ .blog_tag_widget.csv1{
+   box-shadow: 0 1px 4px 0 rgba(0,0,0,.12);
+   border-width: 0px;
+   background-color: #FFF;
+ }
+ 
+ .instructor_pricing_widget .price{
+   font-size: 30px;
+   font-family: "Nunito";
+   color: #0a0a0a;
+   font-weight: bold;
+   line-height: 1.2;
+ }
+ .instructor_pricing_widget .price span{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(79, 79, 79);
+   line-height: 2.667;
+ }
+ .instructor_pricing_widget .price small{
+   font-size: 14px;
+   font-family: "Open Sans";
+   color: rgb(193, 193, 193);
+   line-height: 2.857;
+ }
+ .instructor_pricing_widget h5{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(79, 79, 79);
+   line-height: 2.667;
+ }
+ .instructor_pricing_widget .price_quere_list li a{
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(126, 126, 126);
+   line-height: 2.667;
+ }
+ .instructor_pricing_widget .price_quere_list li a span{
+   color: #0a0a0a;
+   font-size: 18px;
+   padding-right: 5px;
+ }
+
+ 
+.cart_btnss{
+   border-radius: 27px;
+   background-color: rgb(255, 16, 83);
+   display: block;
+   font-size: 15px;
+   font-family: "Open Sans";
+   color: rgb(255, 255, 255);
+   height: 50px;
+   line-height: 3.2;
+   margin-bottom: 23px;
+   margin-top: 23px;
+   max-width: 234px;
+   border: 2px solid #ff1053;
+   -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+ }
+ .cart_btnss:hover{
+   background-color: #ffffff;
+   border: 2px solid #ff1053;
+   color: #ff1053;
+ }
+ .cart_btnss_white{
+   background-color: #ffffff;
+   border: 2px solid #ff1053;
+   border-radius: 27px;
+   color: #ff1053;
+   display: block;
+   font-size: 15px;
+   font-family: "Open Sans";
+   line-height: 3.2;
+   margin-bottom: 23px;
+   height: 50px;
+   max-width: 234px;
+   -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+     -o-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+ }
+ .cart_btnss_white:hover{
+   background-color: #ff1053;
+   color: #ffffff;
+ }

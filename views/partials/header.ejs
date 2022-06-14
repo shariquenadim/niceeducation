@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1865f2">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/6361008fd3.js" crossorigin="anonymous"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600;700&family=Lobster&family=Nunito:wght@200;400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Itim&display=swap" rel="stylesheet">
+    <!-- OwlCarousel2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" />
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- OwlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="/img/oie_hog2OxxOTF11 (1).png">
+
+    <title>Paradigm</title>
+  </head>
+  <body id="style-2" class="homepage-body">
+
+    <canvas id="canvas"></canvas>
+
+    <section class="nav-container">
+      <div class="nav">
+
+        <div class="nav__text-box nav__text-box-1">
+          <a href="javascript:void(0)" class="nav__link" id="course"><h1 class="nav__item">Courses <i class="fas fa-sort-down"></i></h1></a>
+          <!-- <input type="text" placeholder="Search" id="Search" class="nav__item"> -->
+          <!-- <label for="Search"><i class="fas fa-search"></i></label> -->
+          <div class="container">
+          <input type="text" placeholder="Search...">
+          <div class="search"></div>
+          </div>
+        </div>
+
+        <div class="nav__logo-box">
+          <a href="https://paradigmclasses.online" class="nav__logo">
+            <!-- <i class="fab fa-pinterest-p"></i>
+          <h1 class="nav__heading">Paradigm</h1> -->
+          <img src="/img/oie_hog2OxxOTF11 (1).png" alt="" class="nav__img">
+        </a>
+        </div>
+
+        <div class="nav__text-box nav__text-box-2">
+          <a href="/brands" class="nav__link"><h1 class="nav__item">Our Brands</h1></a>
+          <a href="javascript:void(0)" class="nav__link"><h1 class="nav__item">About Us</h1></a>
+        </div>
+
+        <div class="nav__toggle d-none" id="nav__toggle">
+          <a href="javascript:void(0)" class="nav__link nav__toggle-open"><i class="fas fa-bars"></i></a>
+          <a href="javascript:void(0)" class="nav__link nav__toggle-close d-none"><i class="fas fa-times"></i></a>
+        </div>
+
+      </div>
+
+      <div class="nav-course-container d-none">
+        <div class="nav-course">
+
+          <div class="nav-course__text-box">
+            <h1 class="nav-course__heading">Pre foundation - 9th & 10th</h1>
+            <ul class="nav-course__list">
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">ICSE</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">CBSE</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">West Bengal Board</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-course__text-box">
+            <h1 class="nav-course__heading">Foundation - 11th & 12th</h1>
+            <ul class="nav-course__list">
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">Science</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">Biology</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">Commerce</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-course__text-box">
+            <h1 class="nav-course__heading">Medical</h1>
+            <ul class="nav-course__list">
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">NEET</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-course__text-box">
+            <h1 class="nav-course__heading">Engineering</h1>
+            <ul class="nav-course__list">
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">JEE MAINS</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">JEE ADVANCED</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">WB JEE</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-course__text-box">
+            <h1 class="nav-course__heading">Professional Courses</h1>
+            <ul class="nav-course__list">
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">WBCS</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">CGL</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">Primary TEE</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">SSC</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">Banking</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-course__text-box">
+            <h1 class="nav-course__heading">Learning Courses</h1>
+            <ul class="nav-course__list">
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">Spoken English</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">Vocational Course</a></li>
+              <li class="nav-course__list-item"><a href="javascript:void(0)" class="nav__link">Computer Course</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="nav-toggle d-none">
+
+        <div class="nav-toggle__text-box">
+          <form action="">
+            <input type="text" placeholder="Search" id="Search" class="nav__item">
+            <input type="submit" name="search" value="search" class="nav__toggle-submit-btn">
+          </form>
+          <a href="brands" class="nav__link"><h1 class="nav-toggle__item">Our Brands</h1></a>
+          <a href="javascript:void(0)" class="nav__link"><h1 class="nav-toggle__item">About Us</h1></a>
+          <div>
+            <a href="javascript:void(0)" class="nav__link course-dropdown"><h1 class="nav-toggle__item">Pre Foundation - 9th & 10th <i class="fas fa-caret-right"></i></h1></a>
+            <ul class="nav-toggle__list d-none">
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">ICSE</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">CBSE</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">West Bengal Board</a></li>
+            </ul>
+          </div>
+          <div>
+            <a href="javascript:void(0)" class="nav__link course-dropdown"><h1 class="nav-toggle__item">Foundation - 11th & 12th <i class="fas fa-caret-right"></i></h1></a>
+            <ul class="nav-toggle__list d-none">
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">Science</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">Humanity</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">Commerce</a></li>
+            </ul>
+          </div>
+          <div>
+            <a href="javascript:void(0)" class="nav__link course-dropdown"><h1 class="nav-toggle__item">Medical <i class="fas fa-caret-right"></i></h1></a>
+            <ul class="nav-toggle__list d-none">
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">NEET</a></li>
+            </ul>
+          </div>
+          <div>
+            <a href="javascript:void(0)" class="nav__link course-dropdown"><h1 class="nav-toggle__item">Engineering <i class="fas fa-caret-right"></i></h1></a>
+            <ul class="nav-toggle__list d-none">
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">JEE MAINS</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">JEE ADVANCED</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">WB JEE</a></li>
+            </ul>
+          </div>
+          <div>
+            <a href="javascript:void(0)" class="nav__link course-dropdown"><h1 class="nav-toggle__item">Professional Courses <i class="fas fa-caret-right"></i></h1></a>
+            <ul class="nav-toggle__list d-none">
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">WBSC</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">CGL</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">Primary TEE</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">SSC</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">Banking</a></li>
+            </ul>
+          </div>
+          <div>
+            <a href="javascript:void(0)" class="nav__link course-dropdown"><h1 class="nav-toggle__item">Learning Courses <i class="fas fa-caret-right"></i></h1></a>
+            <ul class="nav-toggle__list d-none">
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">Spoken English</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">Vocational Course</a></li>
+              <li class="nav-toggle__list-item"><a href="javascript:void(0)" class="nav__link">Computer Course</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
