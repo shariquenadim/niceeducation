@@ -10,9 +10,9 @@ const {
 
 var db = {
 host: "localhost",
-user: "root",
-password: "root",
-database: 'test'
+user: "paradigm_admin",
+password: "paradigm_admin",
+database: 'paradigm_test'
 };
 
 // var db = mysql.createPool({
@@ -79,9 +79,9 @@ const getAllCourse = async function(conn) {
 }
 
 
-const getCourseByName = async function(conn,name) {
+const getCourseById = async function(conn,id) {
    return new Promise((resolve, reject) => {
-      conn.query(`SELECT * FROM course WHERE name = '${name}'`, function(err, result, fields) {
+      conn.query(`SELECT * FROM course WHERE id = '${id}'`, function(err, result, fields) {
          if(err) {
             return reject(err)
          }
@@ -114,28 +114,37 @@ router.get("/" , (req,res) => {
   res.render("home");
 });
 
-router.get("/about" , (req,res) => {
-   res.render("about");
- });
-
 router.get("/courses" , (req,res) => {
    res.render("courses");
 });
 
-router.get("/courses/:name" , (req,res) => {
-   connectToDb()
-   .then(response => {
-      return getCourseByName(response,req.params.name)
-   })
-   .then(response => {
-      console.log(response[0]);
-      res.render("singleCourse" , {course : response[0]});
-   })
-   .catch(err => {
-      console.log(err);
-      res.redirect('/error')
-   })
-   
+router.get("/courses/:id" , (req,res) => {
+   let course = {
+      id: 101,
+      name: "Engineering",
+      description: "Bachelors of business administration are a popular undergraduate course programme. The major field of academic focus on this course is management. On the undergraduate level, students are taught the basic and brief concepts of business, administration, entrepreneurship, and management.",
+      salary: "The starting salary package or the above job profiles is 2 to 3 lakh per annum",
+      age: ["Minimum age limit: 17 years", "Maximum age limit: 25 years"],
+      duration: "3 to 4 years",
+      about: [
+         "Students who pursue B.B.A course can go for higher post-graduations degrees like M.B.A",
+         "The prime motto of B.B.A degree is to enhance leadership qualities, decision making ability, verbal & written communication skills, etc. It studies numerous aspects of business management."
+      ],
+      eligibility: [
+         "Candidates who passed on the (10+2) examination in any stream or any equivalent degree from an accepted university.",
+         "An applicant should secure at least 50% marks on the qualifying 12th standard exam."
+      ],
+      scope: [
+         "Business consultant",
+         "Marketing manager",
+         "Business administration researcher",
+         "Finance Manager",
+         "Research & development manager",
+         "Human resource manager"
+      ],
+   };
+
+   res.render("singleCourse" , {course : course});
 })
 
 

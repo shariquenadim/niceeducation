@@ -275,9 +275,8 @@ a {
    font-family: "Open Sans";
    font-size: 15px;
    display: inline;
-   line-height: 2.667;
+   line-height: 2;
    margin-bottom: 0;
-   padding-left: 13px;
  }
  .cs_row_three .course_content{
    border-style: solid;
