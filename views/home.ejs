@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>The Ace Education</title>
+    <title>NICE EDUCATION</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+       <meta name="msapplication-TileColor" content="#61bfc1">
+   <meta name="msapplication-TileImage" content="/img/lo1.jpeg">
+   <meta name="theme-color" content="#61bfc1">
     <link rel="shortcut icon" href="assets/img/education/logo/lo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/fontawesome-all.css">
@@ -17,8 +20,9 @@
     <link rel="stylesheet" href="assets/css/education.css">
 </head>
 <body class="app-edu">
+    <%- include('partials/marquee') %>
     <!-- preloader - start -->
-    <!-- <div id="app-edu-preloader"></div> -->
+     <div id="app-edu-preloader"></div> 
     <div class="up">
         <a href="#" class="app-edu-scrollup text-center"><i class="fas fa-angle-up"></i></a>
     </div>
@@ -36,7 +40,7 @@
                  <nav class="app-edu-main-navigation float-right clearfix ul-li">
                      <ul id="app-edu-main-nav" class="nav navbar-nav clearfix">
                          <li class="side-demo position-relative"><a href="/">Home</a></li>
-                         <li><a href="/about">About</a></li>
+                         <li><a href="#">About</a></li>
                          <li><a href="#">Team</a></li>
                          <li><a href="/courses">Courses</a></li>
                          <li><a href="#">Contact</a></li>
@@ -60,7 +64,7 @@
                          <nav class="app-edu-mobile-main-navigation  clearfix ul-li">
                           <ul id="m-main-nav" class="navbar-nav text-capitalize clearfix">
                              <li ><a href="#">Home</a></li>
-                             <li><a href="/about">About</a></li>
+                             <li><a href="#">About</a></li>
                              <li><a href="#">Team</a></li>
                              <li><a href="/courses">Courses</a></li>
                              <li><a href="#">Contact</a></li>
@@ -786,7 +790,7 @@
                 <div class="app-edu-footer-copyright clearfix">
                     <div class="copyright-text float-left">
                         <p>All rights reserved © <script>document.write(new Date().getFullYear());</script>
-                           <a href="#">Ace Education</a>
+                           <a href="#">NICE Education</a>
                         </p>
                     </div>
                     <div class="copyright-menu float-right ul-li">
