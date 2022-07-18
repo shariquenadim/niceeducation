@@ -76,11 +76,25 @@ const getBlogById = async function(conn,id) {
    })
 }
 
+const createBlog = async function(conn, title, description, type) {
+   return new Promise((resolve, reject) => {
+      let id = uuidv1();
+      conn.query(`INSERT INTO blog (id, title, body, type) VALUES ('${id}', '${title}', '${description}', '${type}')`, function(err, result, fields) {
+         if(err) {
+            return reject(err)
+         }
+         resolve(result);
+      })
+      conn.end();
+   })
+}
+
 //================================
 // nodemailer
 //===============================
 const nodemailer = require('nodemailer');
 var smtpTransport = require("nodemailer-smtp-transport");
+const { type } = require("os");
 
 const transporter = nodemailer.createTransport(smtpTransport({
     host : "mail.paradigmclasses.online",
@@ -162,6 +176,28 @@ router.get("/blog/:id" , (req,res) => {
       res.redirect('/error')
    })
 });
+
+
+//================================
+// NEW BLOG
+//===============================
+router.get("/new/blog", (req, res) => {
+   res.render("form/newBlog");
+})
+
+router.post("/new/blog", (req, res) => {
+   connectToDb()
+   .then(response => {
+      return createBlog(response, req.body.title, req.body.description, "BLOG")
+   })
+   .then(response => {
+      res.redirect("/blog")
+   })
+   .catch(err => {
+      console.log(err);
+      res.redirect('/error')
+   })
+})
 
 //error
 router.get("/error" , (req,res) => {
