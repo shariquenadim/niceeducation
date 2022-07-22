@@ -10,50 +10,10 @@ const {
 
 var db = {
 host: "localhost",
-user: "paradigm_admin",
-password: "paradigm_admin",
-database: 'paradigm_test'
+user: "root",
+password: "123",
+database: 'test'
 };
-
-// var db = mysql.createPool({
-//    host: "localhost",
-//    user: "root",
-//    password: "root",
-//    database: 'test'
-//  });
- 
-// const connectToDb = async function(){
-//    return new Promise((resolve,reject) => {
-//       db.getConnection((err) => {
-//          if(err) return reject(err);
-
-//          resolve()
-//       })
-//    })
-// }
-
-// const getAllCourse = async function() {
-//    return new Promise((resolve, reject) => {
-//       db.query('SELECT * FROM course', function(err, result, fields) {
-//          if(err) {
-//             return reject(err)
-//          }
-//          resolve(result);
-//       })
-//    })
-// }
-
-// const getAllCourse = async function(conn) {
-//    return new Promise((resolve, reject) => {
-//       conn.query('SELECT * FROM course', function(err, result, fields) {
-//          if(err) {
-//             return reject(err)
-//          }
-//          resolve(result);
-//       })
-//       conn.end();
-//    })
-// }
 
 const connectToDb = async function(){
    return new Promise((resolve,reject) => {
@@ -91,11 +51,50 @@ const getCourseById = async function(conn,id) {
    })
 }
 
+
+const getAllBlogs = async function(conn) {
+   return new Promise((resolve, reject) => {
+      conn.query('SELECT * FROM blog', function(err, result, fields) {
+         if(err) {
+            return reject(err)
+         }
+         resolve(result);
+      })
+      conn.end();
+   })
+}
+
+const getBlogById = async function(conn,id) {
+   return new Promise((resolve, reject) => {
+      conn.query(`SELECT * FROM blog WHERE id = '${id}'`, function(err, result, fields) {
+         if(err) {
+            return reject(err)
+         }
+         resolve(result);
+      })
+      conn.end();
+   })
+}
+
+const createBlog = async function(conn, title, description, type) {
+   return new Promise((resolve, reject) => {
+      let id = uuidv1();
+      conn.query(`INSERT INTO blog (id, title, body, type) VALUES ('${id}', '${title}', '${description}', '${type}')`, function(err, result, fields) {
+         if(err) {
+            return reject(err)
+         }
+         resolve(result);
+      })
+      conn.end();
+   })
+}
+
 //================================
 // nodemailer
 //===============================
 const nodemailer = require('nodemailer');
 var smtpTransport = require("nodemailer-smtp-transport");
+const { type } = require("os");
 
 const transporter = nodemailer.createTransport(smtpTransport({
     host : "mail.paradigmclasses.online",
@@ -114,41 +113,106 @@ router.get("/" , (req,res) => {
   res.render("home");
 });
 
+//================================
+// COURSES
+//===============================
 router.get("/courses" , (req,res) => {
-   res.render("courses");
+   connectToDb()
+   .then(response => {
+      return getAllCourse(response)
+   })
+   .then(response => {
+      res.render("courses" , {course : response});
+   })
+   .catch(err => {
+      console.log(err);
+      res.redirect('/error')
+   })
 });
 
 router.get("/courses/:id" , (req,res) => {
-   let course = {
-      id: 101,
-      name: "Engineering",
-      description: "Bachelors of business administration are a popular undergraduate course programme. The major field of academic focus on this course is management. On the undergraduate level, students are taught the basic and brief concepts of business, administration, entrepreneurship, and management.",
-      salary: "The starting salary package or the above job profiles is 2 to 3 lakh per annum",
-      age: ["Minimum age limit: 17 years", "Maximum age limit: 25 years"],
-      duration: "3 to 4 years",
-      about: [
-         "Students who pursue B.B.A course can go for higher post-graduations degrees like M.B.A",
-         "The prime motto of B.B.A degree is to enhance leadership qualities, decision making ability, verbal & written communication skills, etc. It studies numerous aspects of business management."
-      ],
-      eligibility: [
-         "Candidates who passed on the (10+2) examination in any stream or any equivalent degree from an accepted university.",
-         "An applicant should secure at least 50% marks on the qualifying 12th standard exam."
-      ],
-      scope: [
-         "Business consultant",
-         "Marketing manager",
-         "Business administration researcher",
-         "Finance Manager",
-         "Research & development manager",
-         "Human resource manager"
-      ],
-   };
-
-   res.render("singleCourse" , {course : course});
+   connectToDb()
+   .then(response => {
+      return getCourseById(response,req.params.id)
+   })
+   .then(response => {
+      console.log(response[0]);
+      res.render("singleCourse" , {course : response[0]});
+   })
+   .catch(err => {
+      console.log(err);
+      res.redirect('/error')
+   })
 })
 
+//================================
+// BLOG
+//===============================
+router.get("/blog" , (req,res) => {
+   connectToDb()
+   .then(response => {
+      return getAllBlogs(response)
+   })
+   .then(response => {
+      res.render("blogs" , {blog : response});
+   })
+   .catch(err => {
+      console.log(err);
+      res.redirect('/error')
+   })
+});
+ 
+router.get("/blog/:id" , (req,res) => {
+   connectToDb()
+   .then(response => {
+      return getBlogById(response,req.params.id)
+   })
+   .then(response => {
+      console.log(response[0]);
+      res.render("singleBlog" , {blog : response[0]});
+   })
+   .catch(err => {
+      console.log(err);
+      res.redirect('/error')
+   })
+});
 
-///api to get all courses
+
+//================================
+// NEW BLOG
+//===============================
+router.get("/new/blog", (req, res) => {
+   res.render("form/newBlog");
+})
+
+router.post("/new/blog", (req, res) => {
+   connectToDb()
+   .then(response => {
+      return createBlog(response, req.body.title, req.body.description, "BLOG")
+   })
+   .then(response => {
+      res.redirect("/blog")
+   })
+   .catch(err => {
+      console.log(err);
+      res.redirect('/error')
+   })
+})
+
+//error
+router.get("/error" , (req,res) => {
+  res.render("error");
+});
+
+//faq
+router.get("/faq" , (req,res) => {
+   res.render("faq");
+});
+
+
+//================================
+// API
+//===============================
 router.get("/api/courses" , (req,res) => {
    connectToDb()
    .then(response => {
@@ -163,11 +227,19 @@ router.get("/api/courses" , (req,res) => {
    })
 })
 
-//error
-router.get("/error" , (req,res) => {
-  res.render("error");
-});
-
+router.get("/api/notice" , (req,res) => {
+   connectToDb()
+   .then(response => {
+      return getAllBlogs(response)
+   })
+   .then(response => {
+      res.status(200).json(response);
+   })
+   .catch(err => {
+      console.log(err);
+      res.redirect('/error')
+   })
+})
 //================================
 // 404
 //===============================

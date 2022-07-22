@@ -3,16 +3,16 @@
 }
 
 .courses-item {
-   height: 200px;
+   height: 250px;
 }
 
 .courses-item .service_content_box {
-   height: 180px;
+   height: 230px;
    margin: 0 15px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
 }
 
 .view-more-btn a {

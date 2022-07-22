@@ -264,7 +264,10 @@ a {
    display: inline;
    line-height: 2.8;
    margin-bottom: 0;
-   padding-left: 10px;
+   /*padding-left: 10px;*/
+ }
+ .cs_row_two .cs_overview ul.cs_course_syslebus li i {
+     padding-right: 10px;
  }
  .cs_row_two .cs_overview ul.list_requiremetn li i{
    font-size: 10px;
@@ -275,8 +278,9 @@ a {
    font-family: "Open Sans";
    font-size: 15px;
    display: inline;
-   line-height: 2;
+   line-height: 2.667;
    margin-bottom: 0;
+   /*padding-left: 13px;*/
  }
  .cs_row_three .course_content{
    border-style: solid;

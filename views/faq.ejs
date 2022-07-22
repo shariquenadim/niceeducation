@@ -2,18 +2,13 @@
 <html lang="en">  
 <head>
    <meta charset="UTF-8">
-   <title>Nice Education | <%= course.name %></title>
+   <title>FAQ</title>
    <link rel="stylesheet" href="/singlecourse/css/style.css">
    <link rel="stylesheet" href="/singlecourse/css/responsive.css">
-   <meta name="description" content="Nice Education|<%= course.name %>">
-   <meta name="viewport" content="<%= course.description %>">
-   <meta name="msapplication-TileColor" content="#61bfc1">
-   <meta name="msapplication-TileImage" content="/img/lo1.jpeg">
-   <meta name="theme-color" content="#61bfc1">
 
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="shortcut icon" href="/img/lo1.jpeg" type="image/x-icon">
-   <link rel="icon" href="/img/lo1.jpeg" type="image/x-icon">
+   <link rel="shortcut icon" href="/assets/img/fv.png" type="image/x-icon">
+   <link rel="icon" href="/assets/img/fv.png" type="image/x-icon">
    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
    <link rel="stylesheet" href="/assets/css/animate.css">
    <link rel="stylesheet" href="/assets/css/flaticon-3.css">
@@ -22,35 +17,13 @@
    <link rel="stylesheet" href="/assets/css/side-demo.css">
    <link rel="stylesheet" href="/assets/css/style.css">
    <link rel="stylesheet" href="/assets/css/education.css">
-   
-    <!-- Facebook-->
-    <meta property="author" content="<%= course.name %> | NICE EDUCATION">
-    <meta property="og:site_name" content="niceeducation.com">
-    <meta property="og:locale" content="en_IN">
-    <meta property="og:type" content="website">
-    <!-- Twitter-->
-    <meta property="twitter:site" content="<%= course.name %> | NICE EDUCATION">
-    <meta property="twitter:domain" content="niceeducation.com">
-    <meta property="twitter:creator" content="NICE EDUCATION">
-    <meta property="twitter:card" content="summary">
-    <meta property="twitter:image:src" content="/img/lo.png">
-    <meta property="og:url" content="niceeducation.com/courses">
-    <meta property="og:title" content="<%= course.name %> | NICE EDUCATION">
-    <meta property="og:description" content="<%= course.description %>">
-    <meta name="twitter:site" content="niceeducation.com">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="/img/lo1.jpeg">
-    <meta property="og:image" content="/img/lo1.jpeg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-   
 
    </head>
 
     <body class="saas-classic">
     <%- include('partials/marquee') %>
     <!-- preloader - start -->
-     <div id="preloader" class="saas-classic-preloader"></div> 
+    <!-- <div id="preloader" class="saas-classic-preloader"></div> -->
     <div class="up">
         <a href="#" id="scrollup" class="saas-classic-scrollup text-center"><i class="fas fa-angle-up"></i></a>
     </div>
@@ -112,111 +85,53 @@
         <section id="saasio-breadcurmb" class="saasio-breadcurmb-section">
             <div class="container">
                 <div class="breadcurmb-title text-center">
-                    <h2><%= course.name %></h2>
+                    <h2>FAQ</h2>
                 </div>
                 <div class="breadcurmb-item-list text-center ul-li">
                    <ul class="saasio-page-breadcurmb">
                        <li><a href="/">Home</a></li>
-                       <li><a href="/courses">Courses</a></li>
-                       <li><a href="/courses/<%= course.id %>"><%= course.name %></a></li>
+                       <li><a href="/faq">FAQ</a></li>
                    </ul>
                </div>
            </div>
        </section>
     <!-- End of breadcurmb section
-        ============================================= -->      
-        <section class="our-team pb40">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12 col-lg-8 col-xl-9">
-                  <div class="row">
-                     <div class="col-lg-12">
-                        <div class="courses_single_container">
-                           <div class="cs_row_one">
-                              <div class="cs_ins_container">
-                                 <div class="cs_instructor">
-                                    <ul class="cs_instrct_list float-left mb0">
-                                       <li class="list-inline-item"><img class="thumb" src="/img/lo.png" alt="nice"></li>
-                                       <li class="list-inline-item"><a href="#">NICE EDUCATION</a></li>
-                                       <li class="list-inline-item"><a href="#">Last updated 07/2022</a></li>
-                                    </ul>
-                                    <ul class="cs_watch_list float-right mb0">
-                                       <li class="list-inline-item"><a href="#"><span class="flaticon-like"></span></a></li>
-                                       <li class="list-inline-item"><a href="https://api.whatsapp.com/send?text=*Hey There!* I found the best <%= course.name %> course on *'NICE EDUCATION'*, with expert mentors and specialized training available! Explore more learning scopes on *NICE EDUCATION* now! 
-*Tap the link below to know more*: https://theaceeducation.com/courses/<%= course.id %>" data-action="share/whatsapp/share" target="_blank"><span class="flaticon-share"> Share</span></a></li>
-                                    </ul>
-                                 </div>
-                                 <h3 class="cs_title"><%= course.name %></h3>
-                                 <ul class="cs_review_seller">
-                                    <li class="list-inline-item"><a href="#"><span>Best Seller</span></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li class="list-inline-item"><a href="#"><i class="fa fa-star"></i></a></li>
-                                    <li class="list-inline-item"><a href="#">4.5 (11,382 Ratings)</a></li>
-                                 </ul>
-                                 <ul class="cs_review_enroll">
-                                    <li class="list-inline-item"><a href="#"><span class="flaticon-profile"></span> 57,869 students enrolled</a></li>
-                                    <li class="list-inline-item"><a href="#"><span class="flaticon-comment"></span> 25 Review</a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <div class="cs_row_two">
-                              <div class="cs_overview">
-                                 <h4 class="title">Overview</h4>
-                                 <h4 class="subtitle">Duration</h4>
-                                 <p class="mb30"><%= course.duration %></p>
-                                 <h4 class="subtitle">Eligibility</h4>
-                                 <ul class="list_requiremetn">
-                                 <%- course.eligibility %>
-                                 </ul>
-                                 <h4 class="subtitle">Age Limit</h4>
-                                 <ul class="list_requiremetn">
-                                 <%- course.age %>
-                                 </ul>
-                                 <h4 class="subtitle">Scope</h4>
-                                 <%- course.scope %>
-                                 <h4 class="subtitle">Expected Salary</h4>
-                                 <p class="mb30"><%= course.salary %></p>
-                                 <h4 class="subtitle">Description</h4>
-                                 <%- course.about %>
-                                 <p class="mb-2">&nbsp;</p>
-                                 <%- course.provide %>
-                              </div>
-                           </div>
-                     
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-4 col-xl-3">
-                  <div class="instructor_pricing_widget">
-                     <div class="price">Paid Course</div><center>
-                     <a href="#" class="cart_btnss">Enroll Course</a>
-                     <a href="#" class="cart_btnss_white">Talk to an expert</a>
-                     </center>
-                     <h4 class="subtitle">Duration</h4>
-                     <p class="mb30"><%= course.duration %></p>
-                     <h4 class="subtitle">Age Limit</h4>
-                     <ul class="list_requiremetn">
-                     <%- course.age %>
-                     </ul>
-                     <h4 class="subtitle">Expected Salary</h4>
-                     <p class="mb30"><%= course.salary %></p>
-                     <!--<h5 class="subtitle text-left">Includes</h5>-->
-                     <!--<ul class="price_quere_list text-left">-->
-                     <!--   <li><a href="#"> 11 hours on-demand video</a></li>-->
-                     <!--   <li><a href="#"> 69 downloadable resources</a></li>-->
-                     <!--   <li><a href="#"> Full lifetime access</a></li>-->
-                     <!--   <li><a href="#"> Access on mobile and TV</a></li>-->
-                     <!--   <li><a href="#"> Assignments</a></li>-->
-                     <!--   <li><a href="#"> Certificate of Completion</a></li>-->
-                     <!--</ul>-->
-                  </div>
-               </div>
+        ============================================= -->    
+        
+      <section class="my-5 py-5">
+        <div class="container">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Question 1
+                </button>
+              </h5>
             </div>
-         </div>
+        
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Answer 1
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  Question 2
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseTwo" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Answer 2
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     <!-- Start of footer section
         ============================================= -->
@@ -274,7 +189,7 @@
                                     <ul>
                                         <li><a href="#"> Home</a></li>
                                         <li><a href="#"> Team</a></li>
-                                        <li><a href="#"> FAQ</a></li>
+                                        <li><a href="/faq"> FAQ</a></li>
                                         <li><a href="#"> Services</a></li>
                                         <li><a href="#"> Gallery</a></li>
                                         <li><a href="#"> About us</a></li>
@@ -309,7 +224,7 @@
                 </div>
             </div>
         </footer>
-        <div class="s2-copyright text-center"><script>document.write(new Date().getFullYear());</script> © All rights reserved by <a href="/">NICE EDUCATION</a></div>
+        <div class="s2-copyright text-center">2021 © All rights reserved by <a href="/">Ace Education</a></div>
     <!-- End of footer section 
         ============================================= -->
 
